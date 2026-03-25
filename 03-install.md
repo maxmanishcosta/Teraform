@@ -21,3 +21,13 @@
 ## macOS
 
 - Follow the steps provided in the Downloads [Page](https://developer.hashicorp.com/terraform/downloads) for macOS.
+
+## Installing Terraform on Amazon Linux 2
+
+- Launch an Amazon Linux 2 instance and attach a role with admin permissions.
+
+- sudo yum update -y
+- sudo yum install -y yum-utils
+- sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+- sudo yum install -y terraform
+- terraform version
