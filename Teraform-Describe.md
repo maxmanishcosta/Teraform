@@ -1,12 +1,12 @@
 ## Terraform command
 
-- terraform fmt [used to format your configuration files into a canonical format and style]
-- terraform fmt -recursive --for all files
-- terraform init - The terraform init command initializes a working directory containing Terraform configuration files.
-- terraform plan - Creates an execution plan (dry run)
-- terraform apply - Executes changes to the actual environment
-- terraform apply -auto-approve - Apply changes without being prompted to enter "yes."
-- terraform destroy -auto-approve - Destroy/cleanup without being prompted to enter "yes"
+- `terraform fmt` [used to format your configuration files into a canonical format and style]
+- `terraform fmt -recursive` --for all files
+- `terraform init` - The terraform init command initializes a working directory containing Terraform configuration files.
+- `terraform plan` - Creates an execution plan (dry run)
+- `terraform apply` - Executes changes to the actual environment
+- `terraform apply -auto-approve` - Apply changes without being prompted to enter "yes."
+- `terraform destroy -auto-approve` - Destroy/cleanup without being prompted to enter "yes"
 
 
 All tf code should be written in .tf files, extension is .tf, also called configuration files
@@ -46,9 +46,9 @@ region "ap-south-1"
 Whenever you have a new or existing Terraform directory (containing your Terraform configuration files), you need to run terraform init to prepare that directory for other Terraform commands.
 
 
-- Provider Plugins: Terraform uses plugins to interface with cloud providers (like AWS, Azure, Google Cloud, etc.). The init command checks the configuration files to see which providers you're using and fetches the required provider plugins.
+**Provider Plugins:** Terraform uses plugins to interface with cloud providers (like AWS, Azure, Google Cloud, etc.). The init command checks the configuration files to see which providers you're using and fetches the required provider plugins.
 
-- Provider Versions: If you've specified a particular version of a provider in your configuration, terraform init will download that version. If not, it'll get the latest compatible version.
+**Provider Versions:** If you've specified a particular version of a provider in your configuration, terraform init will download that version. If not, it'll get the latest compatible version.
 
 
 
