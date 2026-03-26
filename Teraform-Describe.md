@@ -9,7 +9,7 @@
 - `terraform destroy -auto-approve` - Destroy/cleanup without being prompted to enter "yes"
 
 
-All tf code should be written in .tf files, extension is .tf, also called configuration files
+All tf code should be written in `.tf` files, extension is .tf, also called configuration files
 
 ## Main things in TF file
 
