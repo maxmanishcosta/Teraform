@@ -27,13 +27,13 @@ is called an identifier. If you want to combine 2 words, use _
 We cannot use AWS instance (space between), so use aws_instance, instance_type.
 
 ## First TF Example
-
+```
 vi main.tf
 
 provider "aws" {
 region "ap-south-1"
 }
-
+```
 -------------------------
 
 - provider is block
