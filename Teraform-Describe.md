@@ -99,10 +99,11 @@ instance_type = "t2.micro"
 }
 ```
 - `terraform apply --auto-approve`
-- `terraform state list`
+- `terraform state list` - list all resources 
 
 ## TARGET
 
 **It is used to delete a specific resource**
-
-
+- `terraform state list` - list all resources 
+- `terraform destroy --auto-approve -target=resources_name` - to delete a single resource
+- `terraform destroy --auto-approve -target=resources_name -target=resources_name` - to delete multiple resources at same time
